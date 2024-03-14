@@ -1,0 +1,2 @@
+codesandbox
+https://codesandbox.io/p/sandbox/generate-random-number-9x4m2q
