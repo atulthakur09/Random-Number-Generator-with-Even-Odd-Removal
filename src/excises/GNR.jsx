@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles.css";
+import "../index.css";
 export default function GNR() {
   const [numbers, setNumbers] = useState([]);
   const handleGenerate = () => {
