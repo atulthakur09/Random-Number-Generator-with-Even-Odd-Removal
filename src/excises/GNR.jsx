@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styles.css";
 export default function GNR() {
   const [numbers, setNumbers] = useState([]);
   const handleGenerate = () => {
@@ -28,7 +29,11 @@ export default function GNR() {
 
   return (
     <div>
-      <button onClick={handleGenerate}>Generate Random Number</button>
+      <h2>Click here to Generate random numbers</h2>
+      <div id="gnr">
+        <button onClick={handleGenerate}>Generate Random Number</button>{" "}
+      </div>
+
       <ul>
         {numbers.map((ele, i) => {
           return (
@@ -36,6 +41,7 @@ export default function GNR() {
               {" "}
               {ele}{" "}
               <button
+                id="remove"
                 onClick={() => {
                   handleRemove(i);
                 }}
@@ -46,8 +52,12 @@ export default function GNR() {
           );
         })}
       </ul>
-      <button onClick={handleRemoveEvens}>Remove Even Numbers</button>
-      <button onClick={handleRemoveOdds}>Remove Odds Numbers</button>
+      <button id="even" onClick={handleRemoveEvens}>
+        Remove Even Numbers
+      </button>
+      <button id="odd" onClick={handleRemoveOdds}>
+        Remove Odds Numbers
+      </button>
       {/* <button onClick={handleRemoveAll}>Clear All Numbers</button> */}
     </div>
   );
