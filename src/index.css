@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  font-family: sans-serif;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#gnr {
+  text-align: center;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+#remove {
+  background-color: rgb(16, 172, 113);
+}
+#remove:hover {
+  background-color: #c82333;
+}
+#even,
+#odd {
+  background-color: rgb(85, 146, 203);
+}
+#even:hover,
+#odd:hover {
+  background-color: rgb(30, 185, 209);
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* List item styling */
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Remove button styling */
+button.remove-btn {
+  background-color: #dc3545;
+}
+
+button.remove-btn:hover {
+  background-color: #c82333;
 }
